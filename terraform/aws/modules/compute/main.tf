@@ -83,7 +83,7 @@ resource "aws_ecs_task_definition" "km_ecs_task" {
   container_definitions    = data.template_file.km_ecs_template.rendered
   network_mode             = "awsvpc"
   requires_compatibilities = ["FARGATE"]
-  cpu                      = 512
+  cpu                      = 1024
   memory                   = 1024
   execution_role_arn       = aws_iam_role.km_ecs_task_execution_role.arn
   tags = merge(var.default_tags, {
