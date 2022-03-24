@@ -4,8 +4,8 @@ on:
     types: [opened]
   workflow_dispatch :
 env :
-  API_URL : "https://int.api.zscwp.io"
-  AUTH_URL : "https://z-cwp-int.us.auth0.com"
+  API_URL : "https://scale.api.zscwp.io"
+  AUTH_URL : "https://z-cwp-scale.us.auth0.com"
   CLI_VERSION : "8f8d398"
 jobs:
   test:
