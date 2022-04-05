@@ -2,6 +2,7 @@ output "private_subnet" {
   value = aws_subnet.km_private_subnet.*.id
 }
 
+
 output "public_subnet" {
   value = aws_subnet.km_private_subnet.*.id
 }
