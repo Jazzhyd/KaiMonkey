@@ -49,7 +49,7 @@
                     "FromPort"   : 9000,
                     "ToPort"    : 9000,
                     "IpProtocol"   : "tcp",
-                    "Description" : "Hadoop"
+                    "Description" : "Hadoop123"
                  },
                     {  
                      "CidrIp" : "0.0.0.0/0",
