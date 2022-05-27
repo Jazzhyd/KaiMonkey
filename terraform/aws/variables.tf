@@ -17,5 +17,5 @@ variable "db_password" {
 
 variable "default_tags" {
   default     = {}
-  description = "default tags to resources"
+  description = "default tags to resource"
 }
