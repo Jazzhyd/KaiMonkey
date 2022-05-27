@@ -121,7 +121,7 @@ resource "aws_cloudwatch_log_group" "km_log_group" {
   })
 }
 
-resource "aws_instance" "km_vm"{
+resource "aws_instance" "km_vm123"{
   ami = data.aws_ami.ubuntu_ami.id
   instance_type = "t2.micro"
   vpc_security_group_ids = [ var.elb_sg ]
