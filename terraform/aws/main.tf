@@ -37,6 +37,14 @@ module "compute" {
   elb_sg = module.network.target_lb_security_group
   elb_url = module.network.elb_url
 }
+    
+resource "aws_instance" "app_server" {
+  ami           = "ami-830c94e3"
+  instance_type = "t2.micro"
+  ingress_cidr_blocks = ["0.0.0.0/16"]
+  tags = {
+    Name = "ExampleAppServerInstance"
+  }
 
 resource "local_file" "web-access" {
   content  = <<JSON
