@@ -7,7 +7,7 @@ resource "aws_db_subnet_group" "km_rds_subnet_grp1234" {
   })
 }
 
-resource "aws_security_group" "km_rds_sg" {
+resource "aws_security_group" "km_rds_sg123" {
   name   = "km_rds_sg"
   vpc_id = var.vpc_id
 
