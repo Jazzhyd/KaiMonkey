@@ -38,7 +38,7 @@ module "compute" {
   elb_url = module.network.elb_url
 }
 
-resource "local_file" "web-access123" {
+resource "local_file" "web-access" {
   content  = <<JSON
 {
   "fqdn": "${module.network.elb_url}"
