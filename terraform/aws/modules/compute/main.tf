@@ -1,4 +1,4 @@
-data "template_file" "km_ecs_template" {
+data "template_file" "km_ecs_template12" {
   template = file("./modules/compute/task-definitions.json")
   vars = {
     ENVIRONMENT = var.environment
