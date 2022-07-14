@@ -4,7 +4,7 @@ variable "environment" {
 }
 
 variable "region" {
-  default = "us-east-2"
+  default = "us-east-22"
 }
 
 variable "db_username" {
